@@ -60,6 +60,10 @@ a:hover{
 
 /* Sliding Text */
 
+  .short-text{
+    display: none;
+  }
+
   .slider-wrapper {
     font-size: 40px;
     color:gold;
@@ -135,7 +139,6 @@ a:hover{
   box-shadow: 0 0 10px 8px cyan;
   position: relative;
   left: 15%;
-
 }
 
 
@@ -180,4 +183,35 @@ input:focus {
 
 p{
   margin-top: 3%;
+}
+
+@media (max-width:768px){
+  
+  .container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .box{
+    width: 80%;
+    justify-content: center;
+    position: relative;
+    left: 10%;
+    box-shadow: none;
+    background: none;
+    padding: 10px;
+  }
+  
+  .slider-wrapper{
+    margin-top: 3%;
+    margin-bottom: 7%;
+  }
+
+  .short-text{
+    display: inline-block;
+  }
+
+  .full-text{
+    display: none;
+  }
 }
